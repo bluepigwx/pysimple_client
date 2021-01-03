@@ -17,7 +17,7 @@ server_socket.listen(MAX_LISTEN_QUEUE)
 
 print("server begin run")
 server_run = True
-while server_socket :
+while server_run :
     client_socket, addr = server_socket.accept()
     print("new client addr", str(addr))
 
