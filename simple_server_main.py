@@ -18,6 +18,7 @@ server_socket.listen(MAX_LISTEN_QUEUE)
 print("server begin run")
 server_run = True
 while server_run :
+    # 这里修改为非阻塞 todo
     client_socket, addr = server_socket.accept()
     print("new client addr", str(addr))
 
